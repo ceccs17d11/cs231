@@ -1,4 +1,9 @@
-#include<stdio.h>
+/*Archana Rose Biju
+  S3 D 11
+  Implementation of Queue Using LL*/
+
+
+include<stdio.h>
 #include<stdlib.h>
 int c=0;
 struct node
