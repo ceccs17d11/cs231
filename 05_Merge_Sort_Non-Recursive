@@ -1,5 +1,7 @@
-/* Non recursive mergesort
-   Archana Rose Biju S3 D 11*/
+/* Archana Rose Biju
+   S3 D 11
+   Merge Sort Non Recursive*/
+   
 #include<stdio.h>
 
 #define max 25
