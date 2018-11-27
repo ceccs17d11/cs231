@@ -1,5 +1,8 @@
+/*Archana Rose Bju
+  S3 D 11
+  Implementation of Queue Using Array*/
+  
 #include <stdio.h>
- 
 #define MAX 50
 int queue_array[MAX];
 int rear = - 1;
