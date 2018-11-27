@@ -1,3 +1,8 @@
+/*  Archana Rose Biju
+    S3 D 11
+    Sequential search*/
+
+
 #include<stdio.h>
 #include<conio.h>
 void main()
