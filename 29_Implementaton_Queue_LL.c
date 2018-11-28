@@ -1,6 +1,6 @@
 /*Archana Rose Biju
   S3 D 11
-  Implementation Of Circular Queue Using LL*/
+  Implementation Of Circular Queue Using array*/
 
 
 #include <stdio.h>
@@ -76,4 +76,3 @@ int main() {
 		}
 	} while(choice != '4');
 }
-© 2018 GitHub, Inc.
