@@ -1,6 +1,6 @@
 /*Archana Rose Biju
   S3 D 11
-  Implementation Of Queue Using LL*/
+  Implementation Of Circular Queue Using LL*/
 
 
 #include <stdio.h>
