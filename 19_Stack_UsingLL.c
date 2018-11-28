@@ -1,3 +1,9 @@
+/*Archana Rose Bju
+  S3 D 11
+  Stack Using LL*/
+
+
+
 #include<stdio.h>
 #include<stdlib.h>
 int c=0;
