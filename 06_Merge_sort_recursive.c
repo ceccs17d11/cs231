@@ -7,13 +7,13 @@ void mergesort(int a[],int i,int j);
 void merge(int a[],int i1,int j1,int i2,int j2);
 int main()
 {   int a[30],n,i;
-    printf("Enter no: of elements:");
+    printf("Ent#er no: of elements:");
     scanf("%d",&n);
     printf("Enter array elements:");
     for(i=0;i<n;i++)
   	scanf("%d",&a[i]);
     mergesort(a,0,n-1);
-    printf("Sorted Array:");
+    printf("Sorted Array:"); 
     for(i=0;i<n;i++)
 	printf("\n%d\n",a[i]);
     return 0;
@@ -44,5 +44,16 @@ void merge(int a[],int i1,int j1,int i2,int j2)
      while(j<=j2)
 	   temp[k++]=a[j++];
      for(i=i1,j=0;i<=j2;i++,j++)
-	   a[i]=temp[j];
+	   a[i]=temp[j];UTU
 }
+
+
+OUTPUT:
+enter the number of elements : 5
+enter the elements 1 :5
+enter the elements 2 :6
+enter the elements 3 :2
+enter the elements 4 :8
+enter the elements 5 :6
+Sorted list is :
+2 5 6 6 8
