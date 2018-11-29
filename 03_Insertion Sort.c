@@ -34,3 +34,9 @@ void main()
 		}
 
 }
+
+OUTPUT:
+Enter size of array: 5
+Enter 5 elements in arry:
+3 2 7 9 4
+After Sorting elements: 2  3  4  7  9 
