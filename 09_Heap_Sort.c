@@ -3,6 +3,7 @@
   Heap Sort*/
 
 
+
 #include<stdio.h>
 void main()
 {
@@ -27,9 +28,7 @@ void main()
 			c=root;
 		}while(c!=0);
 	}
-	printf("Heap array:");
-	for(i=0;i<n;i++)
-		printf("%d\t",heap[i]);
+	
 	for(j=n-1;j>=0;j--)
 	{
 		temp=heap[0];
@@ -54,3 +53,15 @@ void main()
 		for(i=0;i<n;i++)
 			printf("%d \t",heap[i]);
 }
+
+/*  output
+ Enter the no.of elements
+5
+ Enter the numbers:
+5
+7
+9
+8
+2
+The sorted array is:2  5       7       8       9
+*/
