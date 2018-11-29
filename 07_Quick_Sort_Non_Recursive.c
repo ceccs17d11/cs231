@@ -58,3 +58,23 @@ int main() {
 	quickSortIterative(array, 0, size-1);
 	printArray(array, size);
 }
+
+
+/*  output
+Enter number of elements in the array :
+6
+Enter the array
+4
+6
+7
+2
+8
+1
+Sorted array
+1
+2
+4
+6
+7
+8
+*/
