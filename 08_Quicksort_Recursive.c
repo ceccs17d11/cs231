@@ -2,48 +2,68 @@
   S3 D 11
   Quic sort Recursive*/
 
-
-#include <stdio.h>
-
-void swap(int *a, int *b) {
-	int temp = *a;
-	*a = *b;
-	*b = temp;
-}
-int partition(int array[], int low, int high) {
-  int i = low-1;
-  int pivot = array[high];
-
-  for (int j=low; j<high; j++) {
-    if (array[j]<pivot) {
-      swap(&array[++i], &array[j]);
+#include<stdio.h>
+void quicksort(int *arr, int low, int high)
+{
+  int pivot, i, j, temp;
+  if(low < high) 
+  {
+    pivot = low; 
+    i = low;
+    j = high;
+    while(i < j) 
+	{
+      
+      while(arr[i] <= arr[pivot] && i <= high)
+        i++;     
+      while(arr[j] > arr[pivot] && j >= low)
+        j--;
+      if(i < j)
+	  {
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
     }
+
+    temp = arr[j];
+    arr[j] = arr[pivot];
+    arr[pivot] = temp;
+   
+    quicksort(arr, low, j-1);
+    quicksort(arr, j+1, high);
   }
-  swap(&array[++i], &array[high]);
-  return i;
 }
-void quickSort(int array[], int low, int high) {
-	int partitionIndex;
-	if (low < high) {
-		partitionIndex = partition(array, low, high);
-		quickSort(array, low, partitionIndex-1);
-		quickSort(array, partitionIndex+1, high);
-	}
+
+int main()
+{
+  int arr[20], n, i;
+  printf("Enter the size of the array\n");
+  scanf("%d", &n);
+
+  printf("Enter the elements to be sorted\n");
+  for(i = 0; i < n; i++)
+    scanf("%d", &arr[i]);
+
+  quicksort(arr, 0, n-1);
+
+  printf("Sorted array\n");
+  for(i = 0; i < n; i++)
+    printf("%d ", arr[i]);
+
+  return 0;
 }
-int printArray(int a[], int size) {
-	int i=0;
-	for (i=0; i<size; i++) {
-		printf("%d\n", a[i]);
-	}
-}
-int main() {
-	int array[100], i, size;
-	printf("Enter size of the array : ");
-	scanf("%d", &size);
-	printf("Enter array elements\n");
-	for (i=0; i<size; i++)
-		scanf("%d", &array[i]);
-	printf("Sorted Array\n");
-	quickSort(array, 0, size-1);
-	printArray(array, size);
-}
+
+/*  output
+Enter the size of the array
+6
+Enter the elements to be sorted
+45
+84
+74
+35
+12
+66
+Sorted array
+12 35 45 66 74 84
+*/
