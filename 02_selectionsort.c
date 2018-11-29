@@ -26,3 +26,10 @@ void main()
 	printf("%d",a[i]);
   getch();
 }
+
+
+OUTPUT:
+
+Enter no of elements:5
+Enter the elements:2 5 7 6 1
+Sorted elements:12567
